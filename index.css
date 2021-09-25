@@ -1,30 +1,39 @@
-* {
-    box-sizing: border-box;
-}
 
 #page {
-    margin: 0;
-    padding: 0;
+    margin: 1vh 0;
     display: flex;
     position: relative;
 }
 
-#navbar {
-    position: absolute;
-    left: 0;
-    padding: 0;
+.index {
+    position: fixed;
+    left: 1vw;
     margin: 0;
     display: flex;
     flex-direction: column;
     overflow: auto;
-    width: 15%;
+    width: 17%;
     text-align: center;
+    height: 96vh;
+    background-color: hsl(0, 4%, 88%);
+}
 
+.code {
+    background-color: black;
+    padding: 5px 8px;
+    margin: 8px;
+    color: white;
+}
+
+#navbar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #navbar-header {
     font-size: x-large;
-    position: sticky;
+    font-weight: bolder;
     top: 0;
     margin: 0;
     padding: 40px 0;
@@ -33,10 +42,10 @@
 
 .nav-link {
     margin: 0;
-    padding: 40px 0;
+    padding: 2vh 0;
     font-size: x-large;
     text-decoration: none;
-    color: black;
+    color: hsl(219, 100%, 53%);
     border-bottom: 2px solid black;
 }
 
@@ -49,4 +58,12 @@
 .main-section > header {
     font-size: 200%;
     font-weight: bold;
+}
+
+p, li, code {
+    font-size: larger;
+}
+
+a:hover {
+  background-color: greenyellow;
 }
